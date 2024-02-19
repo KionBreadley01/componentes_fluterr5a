@@ -1,14 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:prctica3/home_screen.dart';
+import 'package:prctica3/Screens/home_screen.dart';
+import 'package:prctica3/theme/app_theme.dart';
+
 
 class MainApp extends StatelessWidget {
   const MainApp({super.key});
+  
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      debugShowCheckedModeBanner:  false,
-      home: HomeScreen(),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: const home_screen(),
+      theme: AppTheme.lightTheme,
+      ),
     );
   }
 }
