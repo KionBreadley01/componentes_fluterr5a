@@ -7,7 +7,7 @@ class AppTheme{
    //constaten de color primario 
   static const primaryColor =Color.fromARGB(255, 41, 15, 46);
   //color constate del,color secundario
-  static const secondaryColor = Color.fromARGB(255, 41, 15, 16)
+  static const secondaryColor = Color.fromARGB(255, 41, 15, 16);
   //constate del,color de fondo
   static const backColor = Color.fromARGB(255, 247, 217, 251);
   //constante de color del 
