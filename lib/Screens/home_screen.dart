@@ -14,34 +14,40 @@ class HomeScreen extends StatelessWidget {
           children: <Widget> [
             ListTile(
               title: Text('Entradas',
-                  style: AppTheme.lightTheme.textTheme.headlineLarge,
+              style: AppTheme.lightTheme.textTheme.headlineLarge
                   ),
               subtitle: Text('Recuperar contraseñas',
-                style: Theme.of(context).textTheme.bodySmall,
+              style: AppTheme.lightTheme.textTheme.bodySmall
                 ),
-              leading: const Icon(Icons.input_rounded),
-              trailing: const Icon(Icons.arrow_right_alt_outlined),
+              leading: const Icon(Icons.input_rounded,
+               color: AppTheme.primaryColor),
+              trailing: const Icon(Icons.arrow_right_alt_outlined,
+               color: AppTheme.secondaryColor),
             ),
             const Divider(),
             ListTile(
               title: Text('Lista infinita',
-                style: Theme.of(context).textTheme.headlineLarge,
+              style: AppTheme.lightTheme.textTheme.headlineLarge
                 ),
               subtitle: Text('Recuperar muchos elementos',
                 style: Theme.of(context).textTheme.bodySmall,
                 ),
-              leading: const Icon(Icons.list_alt_sharp),
-              trailing: const Icon(Icons.arrow_right_outlined),
+              leading: const Icon(Icons.list_alt_sharp,
+               color: AppTheme.primaryColor),
+              trailing: const Icon(Icons.arrow_right_outlined,
+               color: AppTheme. secondaryColor),
             ),
             ListTile(
               title: Text('Notificaciones',
-                style: Theme.of(context).textTheme.headlineLarge,
+              style: AppTheme.lightTheme.textTheme.headlineLarge
                 ),
               subtitle: Text('Manejo de notificaciones',
-                style: Theme.of(context).textTheme.bodySmall,
+              style: AppTheme.lightTheme.textTheme.headlineLarge
                 ),
-              leading: const Icon(Icons.notification_important),
-              trailing: const Icon(Icons.arrow_right_outlined),
+              leading: const Icon(Icons.notification_important,
+               color: AppTheme.primaryColor),
+              trailing: const Icon(Icons.arrow_right_outlined,
+               color: AppTheme.secondaryColor),
             )
             ],
           ),

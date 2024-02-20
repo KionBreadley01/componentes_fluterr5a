@@ -20,12 +20,18 @@ class AppTheme{
             fontSize: 24.0,
             fontWeight: FontWeight.bold,
             color:primaryColor,
+            decoration: TextDecoration.overline,
+            decorationColor: primaryColor,
+            decorationStyle: TextDecorationStyle.wavy,
+            decorationThickness: 10.8,
           ), 
           //funete para texto muy pequeños
-          bodySmall: GoogleFonts.montserrat(
+            bodySmall: GoogleFonts.zenTokyoZoo(
             fontSize: 18.0,
             fontWeight: FontWeight.w900,
-            color: secundaryColor,
+            color: secondaryColor,
+            fontStyle: FontStyle.italic
+            
           ),
         ),
   );
