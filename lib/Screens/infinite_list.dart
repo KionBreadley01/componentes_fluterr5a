@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 class _InfiniteList extends StatefulWidget {
   const _InfiniteList({super.key});
 
