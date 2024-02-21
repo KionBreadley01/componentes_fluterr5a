@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:prctica3/Screens/infinite_list.dart';
+import 'package:prctica3/Screens/inputs.dart';
+import 'package:prctica3/Screens/notification.dart';
 import 'package:prctica3/theme/app_theme.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -23,6 +26,12 @@ class HomeScreen extends StatelessWidget {
                color: AppTheme.primaryColor),
               trailing: const Icon(Icons.arrow_right_alt_outlined,
                color: AppTheme.secondaryColor),
+                onTap: () {
+                 final ruta1 = MaterialPageRoute(builder: (context){
+                  return const Inputs();
+                 } );
+                 Navigator.push(context, ruta1);
+               },
             ),
             const Divider(),
             ListTile(
@@ -34,8 +43,16 @@ class HomeScreen extends StatelessWidget {
                 ),
               leading: const Icon(Icons.list_alt_sharp,
                color: AppTheme.primaryColor),
+               
               trailing: const Icon(Icons.arrow_right_outlined,
                color: AppTheme. secondaryColor),
+               onTap: () {
+                 final ruta2= MaterialPageRoute(builder: (context){
+                  return const InfiniteList();
+                 } );
+                 Navigator.push(context, ruta2);
+               },
+              
             ),
             ListTile(
               title: Text('Notificaciones',
@@ -48,6 +65,12 @@ class HomeScreen extends StatelessWidget {
                color: AppTheme.primaryColor),
               trailing: const Icon(Icons.arrow_right_outlined,
                color: AppTheme.secondaryColor),
+               onTap: () {
+                 final ruta3 = MaterialPageRoute(builder: (context){
+                  return const Notications();
+                 } );
+                 Navigator.push(context, ruta3);
+               },
             )
             ],
           ),
