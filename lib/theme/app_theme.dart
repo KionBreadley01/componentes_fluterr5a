@@ -7,7 +7,7 @@ class AppTheme {
   //color constate del,color secundario
   static const secondaryColor = Color.fromARGB(255, 41, 15, 16);
   //constate del,color de fondo
-  static const backColor = Color.fromARGB(255, 247, 217, 251);
+  static const backColor = Color.fromARGB(255, 235, 224, 15);
   //constante de color del
 
   //Definicion del tema edl color y estilo de la ap
@@ -39,7 +39,7 @@ class AppTheme {
             ))),
 
     textTheme: TextTheme(
-      headlineLarge: GoogleFonts.aladin(
+      headlineLarge: GoogleFonts.roboto(
         fontSize: 29.0,
         fontWeight: FontWeight.bold,
         color: primaryColor,
